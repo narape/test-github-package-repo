@@ -15,8 +15,10 @@ jobs:
           distribution: 'adopt'
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots verify
-      - name: Deploy jars
+      - name: Release snapshot with Maven
+        run: |
+          mvn --batch-mode release:prepare  -DpreparationGoals=clean -DgenerateBackupPoms=false
+          mvn --batch-mode release:perform  -DpreparationGoals=clean -Ddockerfile.push
         env:
           GITHUB_USERNAME: x-access-token
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: mvn --batch-mode deploy
