@@ -1,9 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project>
-    <modelVersion>4.0.0</modelVersion>
 
+    <modelVersion>4.0.0</modelVersion>
     <groupId>com.spotify.test</groupId>
-    <artifactId>github-pakage-repo</artifactId>
+    <artifactId>github-package-repo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <modules>
+        <module>github-package-repo-lib</module>
+        <module>github-package-repo-app</module>
+    </modules>
 
     <distributionManagement>
         <repository>
