@@ -23,6 +23,12 @@
             <url>https://maven.pkg.github.com/narape/test-github-package-repo</url>
         </repository>
     </distributionManagement>
+    <scm>
+        <connection>scm:git:https://github.com/narape/test-github-package-repo.git</connection>
+        <developerConnection>scm:git:https://github.com/flyteorg/flytekit-java.git</developerConnection>
+        <url>https://github.com/narape/test-github-package-repo</url>
+        <tag>HEAD</tag>
+    </scm>
 
     <build>
         <plugins>
