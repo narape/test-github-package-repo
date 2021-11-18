@@ -4,11 +4,11 @@
     <parent>
         <artifactId>github-package-repo</artifactId>
         <groupId>com.spotify.test</groupId>
-        <version>0.0.1</version>
+        <version>0.0.2-SNAPSHOT</version>
     </parent>
 
     <artifactId>github-package-repo-app</artifactId>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>github-package-repo-app</name>
